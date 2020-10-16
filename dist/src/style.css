@@ -1,3 +1,63 @@
-body{
-    background: #eee;
+body {
+    margin: 0px;
+}
+
+.debug {
+    background-color: black;
+    color: #fff;
+    width: 400px;
+    padding: 20px;
+    font-size: 1.1em;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.issamovitch-chart {
+    position: relative;
+}
+
+.issamovitch-chart .title {
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.issamovitch-chart .tooltip {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 3px;
+    position: absolute;
+    height: 24px;
+    line-height: 24px;
+    width: auto;
+    white-space: nowrap;
+    padding: 4px 7px 0px;
+    text-align: center;
+}
+
+.issamovitch-chart .labels {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.issamovitch-chart .labels li {
+    display: inline-block;
+    margin: 3px 10px;
+    white-space: nowrap;
+}
+
+.issamovitch-chart .label-box {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #eee;
+    display: inline-block;
+    margin-right: 3px;
+    margin-right: 5px;
 }
