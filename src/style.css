@@ -1,5 +1,6 @@
-body {
-    margin: 0px;
+.issamovitch-chart canvas {
+    margin: 0px auto;
+    display: block;
 }
 
 .debug {
