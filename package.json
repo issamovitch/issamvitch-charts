@@ -31,5 +31,7 @@
     "webpack-cli": "^4.0.0",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "color-rgba": "^2.2.3"
+  }
 }

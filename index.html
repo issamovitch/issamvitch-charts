@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
-<body>
-    hello this is the new plugin<br>
-    <div id="app"></div>
-    
-    <script>
-        var elem = document.getElementById('app');
-        let instance = new IssChart(elem)
-    </script>
 
+<body>
+    <div id="app" style="width: 300px;"></div>
+    <script>
+        var issChart = IssChart("piechart", document.getElementById('app'), {
+            width: 300,
+            height: 300,
+            title: "This is the title",
+            title_position: "top",
+            debug: false
+        }, {
+            "Item 1": {
+                value: 10,
+                color: "rgba(255, 50, 0, 0.4)"
+            },
+            "Item 2": {
+                value: 20,
+                color: "blue"
+            },
+            "Item 3": {
+                value: 30
+            },
+        })
+    </script>
+    <button onclick='issChart.setData({"Item 1": {value: 10, color:"red"}, 
+    "Item 2": {value: 90, color:"yellow"}})'>
+        Set Data
+    </button>
+    <button onclick='issChart.setOptions({title: "This is a new title", title_position: "bottom", debug: true})'>
+        Set Options
+    </button>
 </body>
+
 </html>
